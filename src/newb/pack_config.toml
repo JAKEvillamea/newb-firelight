@@ -1,22 +1,27 @@
-name = "Newb Firelight"
-version = [0, 2, 0]
+name = "Newb Firelight v0.2.1"
+version = [0, 2, 1]
 min_supported_mc_version = [1, 21, 20]
 description = '''
 §c%w
-§7- An enchanced vanilla shader for Minecraft!
+§7- A shader for Minecraft!
+required game brightness to 0
 %v
 §3https://devendrn.github.io/newb-shader/
 ''' # %w = patch warning, %v = version
-authors = ["JC GAMING7125","devendrn"]
+authors = ["JC_GAMING7125"]
 url = "https://devendrn.github.io/newb-shader/"
-uuid = "b745b8a4-d20c-4214-902e-222cd147a39b" # Use https://www.uuidgenerator.net/version4
-materials = ["Sky", "LegacyCubemap", "Clouds", "EndSky", "SunMoon", "RenderChunk", "Actor"]
+uuid = "f03310f0-0cfc-4c53-8146-8967ccdc5008" # Use https://www.uuidgenerator.net/version4
+materials = ["Sky", "RenderChunk", "Actor", "ActorGlint", "EndSky", "Clouds", "SunMoon", "Weather", "ItemInHandTextured", "ItemInHandColor", "ItemInHandColorGlint", "Stars"]
 
 [info] 
 copyright = '''
-Copyright (c) %a
+Copyright © 2024 %a, and "Newb Shader" Contributors
 
-**Important Note:** Redistribution of this resource pack with links other than the official ones provided by the creator is strictly prohibited.
+This compiled "Newb Shader" resource pack (source code: https://github.com/devendrn/newb-x-mcbe under MIT License) is licensed under CC BY-ND 4.0 (https://creativecommons.org/licenses/by-nd/4.0/). Redistribute only unmodified copies with proper attribution to "Newb Shader" and variant creators (if any). Do not distribute derivatives.
+
+You can compile the shader from source and distribute the result under your own terms (compatible with the MIT License).
+
+Contact (Discord Server): https://discord.gg/newb-community-844591537430069279
 ''' # %a = authors
 credits = '''
 '''
@@ -26,78 +31,16 @@ credits = '''
 
 [[subpack]]
 define = "ROUNDED_CLOUDS"
-materials = ["Actor","LegacyCubemap","RenderChunk","Sky","SunMoon","Clouds","EndSky"]
+materials = ["Clouds"]
 description = '''
 Rounded Clouds
 '''
 
 [[subpack]]
-define = "LOW"
-materials = ["Actor","LegacyCubemap","RenderChunk","Sky","SunMoon","Clouds","EndSky"]
+define = "BOX_CLOUDS"
+materials = ["Clouds", "RenderChunk"]
 description = '''
-low
-'''
-
-[[subpack]]
-define = "LOW_QUALITY_MULTILAYER_CLOUDS"
-materials = ["Actor","LegacyCubemap","RenderChunk","Sky","SunMoon","Clouds","EndSky"]
-description = '''
-Low Quality Multiplayer clouds
-(multilayer clouds for low device)
-'''
-
-[[subpack]]
-define = "MULTILAYER_CLOUD"
-materials = ["Actor","LegacyCubemap","RenderChunk","Sky","SunMoon","Clouds","EndSky"]
-description = '''
-Multiplayer clouds
-(can cause lag for low device)
-'''
-
-[[subpack]]
-define = "VANILLA_CLOUDS"
-materials = ["Actor","LegacyCubemap","RenderChunk","Sky","SunMoon","Clouds","EndSky"]
-description = '''
-Vanilla Clouds
-'''
-
-[[subpack]]
-define = "VANILLA_MULTILAYER"
-materials = ["Actor","LegacyCubemap","RenderChunk","Sky","SunMoon","Clouds","EndSky"]
-description = '''
-Vanilla Multilayer
-'''
-
-
-[[subpack]]
-define = "REALISTIC_CLOUDS"
-materials = ["Actor","LegacyCubemap","RenderChunk","Sky","SunMoon","Clouds","EndSky"]
-description = '''
-REALISTIC_CLOUDS
-(Can cause more lag for low device)
-'''
-
-[[subpack]]
-define = "COMPLEMENTARY_REMAGINED_CLOUDS"
-materials = ["Actor","LegacyCubemap","RenderChunk","Sky","SunMoon","Clouds","EndSky"]
-description = '''
-§2COMPLEMENTARY_REMAGINED_CLOUDS§r
-enhance the vanilla clouds
-'''
-
-[[subpack]]
-define = "APOCALYPSE"
-materials = ["Actor","LegacyCubemap","RenderChunk","Sky","SunMoon","Clouds","EndSky"]
-description = '''
-§4Apocalypse§r
-make your game look like zombie apocalypse
-'''
-
-[[subpack]]
-define = "CHUNK_ANIM"
-materials = ["RenderChunk"]
-description = '''
-Chunk loading animation
+Box Clouds
 '''
 
 [[subpack]]
@@ -119,13 +62,6 @@ define = "NO_WAVE"
 materials = ["RenderChunk"]
 description = '''
 No wave effects
-'''
-
-[[subpack]]
-define = "ALWAYS_REFLECTION"
-materials = ["RenderChunk"]
-description = '''
-Always Reflection 
 '''
 
 [[subpack]]
