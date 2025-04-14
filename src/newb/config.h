@@ -62,8 +62,8 @@
 
 /* Fog */
 #define NL_FOG 0.6               // [toggle] 0.1 subtle ~ 1.0 blend with sky completely
-#define NL_MIST_DENSITY 0.08      // 0.0 no mist ~ 1.0 misty
-#define NL_RAIN_MIST_OPACITY 0.1 // [toggle] 0.04 very subtle ~ 0.5 thick rain mist blow
+#define NL_MIST_DENSITY 1.98      // 0.0 no mist ~ 1.0 misty
+#define NL_RAIN_MIST_OPACITY 0.32 // [toggle] 0.04 very subtle ~ 0.5 thick rain mist blow
 #define NL_CLOUDY_FOG 0.05         // [toggle] 0.0 subtle - 0.8 dense fog clouds
 
 /* Sky colors - zenith=top, horizon=bottom */
